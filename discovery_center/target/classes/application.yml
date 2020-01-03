@@ -1,0 +1,30 @@
+server:
+  port: 8771
+
+spring:
+  security:
+    user:
+      name: jmh
+      password: 123456
+
+eureka:
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 1000
+  client:
+    healthcheck:
+      enabled: true
+    registerWithEureka: false
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@172.18.1.102:8771/eureka
+      #defaultZone: http://172.18.1.102:8771/eureka/
+
+    #user-service-provider:
+    #ribbon:
+    #listOfServers: 172.18.1.102:8774
+    #NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+
+logging:
+  level:
+    com.netflix: warn

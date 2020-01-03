@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: movie-service-consumer
+
+server:
+  port: 8775
+
+feign.hystrix.enabled: true
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 20000
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    fetch-registry: false
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://jmh:123456@172.18.1.102:8771/eureka/ #需添加依赖security
+  instance:
+    prefer-ip-address: true
+    lease-expiration-duration-in-seconds: 5
+    lease-renewal-interval-in-seconds: 5
+    #需要加/actuator前缀
+    status-page-url-path: /info
+    health-check-url-path: /health
+
+ribbon:
+  eureka:
+    enabled: true
+
+user-service-provider:
+  ribbon:
+    #listOfServers: 172.18.1.102:8774
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+
+#暴露端点
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"

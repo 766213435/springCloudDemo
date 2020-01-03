@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: discovery-peer
+  profiles:
+    active: peer1
+---
+spring:
+  profiles: peer1
+
+eureka:
+  instance:
+    hostname: 172.18.1.102
+  client:
+    serviceUrl:
+      defaultZone: http://172.18.1.102:8778/eureka/
+server:
+  port: 8777
+---
+spring:
+  profiles: peer2
+eureka:
+  instance:
+    hostname: 172.18.1.102
+  client:
+    serviceUrl:
+      defaultZone: http://172.18.1.102:8777/eureka/
+server:
+  port: 8778

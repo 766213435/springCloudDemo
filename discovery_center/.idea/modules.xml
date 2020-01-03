@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/discovery_center.iml" filepath="$PROJECT_DIR$/.idea/discovery_center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../discovery_center_03_eureka_peer/discovery_center_03_eureka_peer.iml" filepath="$PROJECT_DIR$/../discovery_center_03_eureka_peer/discovery_center_03_eureka_peer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../movie-service-consumer/movie-service-consumer.iml" filepath="$PROJECT_DIR$/../movie-service-consumer/movie-service-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../movie-service-consumer-02-feign/movie-service-consumer-02-feign.iml" filepath="$PROJECT_DIR$/../movie-service-consumer-02-feign/movie-service-consumer-02-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../movie-service-consumer-feign-with-hystrix/movie-service-consumer-feign-with-hystrix.iml" filepath="$PROJECT_DIR$/../movie-service-consumer-feign-with-hystrix/movie-service-consumer-feign-with-hystrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../movie-service-consumer-with-hystrix/movie-service-consumer-with-hystrix.iml" filepath="$PROJECT_DIR$/../movie-service-consumer-with-hystrix/movie-service-consumer-with-hystrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../user-service-provider/user-service-provider.iml" filepath="$PROJECT_DIR$/../user-service-provider/user-service-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../user-service-provider2/user-service-provider2.iml" filepath="$PROJECT_DIR$/../user-service-provider2/user-service-provider2.iml" />
+    </modules>
+  </component>
+</project>

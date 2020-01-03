@@ -41,9 +41,6 @@ public class UserController {
 
     @GetMapping("/hi")
     public String hiRibbon() throws Exception {
-
-        TimeUnit.SECONDS.sleep(5);
-
         return "{'result':'success'}";
     }
 

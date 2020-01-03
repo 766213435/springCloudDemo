@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="discovery_center" />
+        <module name="discovery-center" />
         <module name="discovery_center_03_eureka_peer" />
         <module name="movie-service-consumer" />
         <module name="movie-service-consumer-02-feign" />
@@ -16,15 +16,5 @@
         <module name="user-service-provider2" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="discovery_center" target="1.8" />
-      <module name="discovery_center_03_eureka_peer" target="1.8" />
-      <module name="movie-service-consumer" target="1.8" />
-      <module name="movie-service-consumer-02-feign" target="1.8" />
-      <module name="movie-service-consumer-feign-with-hystrix" target="1.8" />
-      <module name="movie-service-consumer-with-hystrix" target="1.8" />
-      <module name="user-service-provider" target="1.8" />
-      <module name="user-service-provider2" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

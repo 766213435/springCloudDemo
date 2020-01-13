@@ -11,6 +11,9 @@
         <module name="movie-service-consumer" />
         <module name="movie-service-consumer-02-feign" />
         <module name="movie-service-consumer-feign-with-hystrix" />
+        <module name="movie-service-consumer-feign-without-hystrix" />
+        <module name="movie-service-consumer-ribbon-hystrix_dashboard" />
+        <module name="movie-service-consumer-turbine-hystrix_dashboard" />
         <module name="movie-service-consumer-with-hystrix" />
         <module name="user-service-provider" />
         <module name="user-service-provider2" />

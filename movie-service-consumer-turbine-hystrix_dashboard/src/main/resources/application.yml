@@ -1,10 +1,11 @@
 spring:
   application:
-    name: user-service-provider
-
+    name: movie-service-consumer
 
 server:
-  port: 8774
+  port: 8772
+
+feign.hystrix.enabled: true
 
 eureka:
   client:
@@ -21,8 +22,15 @@ eureka:
     #需要加/actuator前缀
     status-page-url-path: /info
     health-check-url-path: /health
-user:
-  userService: http://service-provider/user/
+
+#ribbon:
+ # eureka:
+#    enabled: false
+
+user-service-provider:
+  ribbon:
+    #listOfServers: 172.18.1.102:8774
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
 
 #\u5982\u679C\u6CE8\u518C\u4E2D\u5FC3\u914D\u7F6E\u4E86\u6743\u9650\u6821\u9A8C
 #\u914D\u7F6E\u7684\u5730\u5740\u683C\u5F0F\u4E3A\uFF1A http://<username>:<password>@localhost:8761/eureka \u5176\u4E2D <username> \u4E3A\u5B89\u5168\u6821\u9A8C\u7684\u7528\u6237\u540D\uFF1B<password> \u4E3A\u8BE5\u7528\u6237\u7684\u5BC6\u7801

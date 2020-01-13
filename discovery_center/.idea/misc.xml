@@ -12,6 +12,9 @@
         <option value="$PROJECT_DIR$/../movie-service-consumer-with-hystrix/pom.xml" />
         <option value="$PROJECT_DIR$/../user-service-provider/pom.xml" />
         <option value="$PROJECT_DIR$/../user-service-provider2/pom.xml" />
+        <option value="$PROJECT_DIR$/../movie-service-consumer-feign-without-hystrix/pom.xml" />
+        <option value="$PROJECT_DIR$/../movie-service-consumer-ribbon-hystrix_dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/../movie-service-consumer-turbine-hystrix_dashboard/pom.xml" />
       </list>
     </option>
   </component>
